@@ -2,7 +2,6 @@ package org.example.productservice.rest;
 
 
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.example.productservice.model.dto.ProductRequest;
 import org.example.productservice.model.entity.Product;
 import org.example.productservice.service.ProductService;

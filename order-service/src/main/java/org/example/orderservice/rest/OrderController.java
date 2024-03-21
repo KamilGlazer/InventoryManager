@@ -4,10 +4,8 @@ package org.example.orderservice.rest;
 import lombok.RequiredArgsConstructor;
 import org.example.orderservice.model.dto.OrderRequest;
 import org.example.orderservice.service.OrderService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -16,9 +14,8 @@ public class OrderController {
 
     private final OrderService orderService;
 
-
-    @PostMapping
-    public String placeOrder(@RequestBody OrderRequest orderRequest){
-        return orderService.addOrder(orderRequest);
+    @PostMapping("/orders")
+    public ResponseEntity<String> placeOrder(@RequestBody OrderRequest orderRequest){
+        return ResponseEntity.ok(orderService.addOrder(orderRequest));
     }
 }
