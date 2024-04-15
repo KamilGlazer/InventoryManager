@@ -1,7 +1,9 @@
 <h1> Authors  </h1>
-<i>Project realized with 2 people </br> </i>
-https://github.com/dawidJarosinski </br>
+<i>Project realized with 2 people </br> </i> 
 https://github.com/KamilGlazer </br>
+https://github.com/dawidJarosinski </br>
+
+
 
 <h2> About project </h2>
 
